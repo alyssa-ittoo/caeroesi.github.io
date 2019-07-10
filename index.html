@@ -452,6 +452,16 @@
     <script type="text/javascript" src="assets/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/slick.js"></script>
     <script>
+        $(window).scroll(function() {    
+            var scroll = $(window).scrollTop();
+        
+            if (scroll >= 100) {
+                $(".navbar").addClass("fixed");
+            }else{
+                $(".navbar").removeClass("fixed");
+            }
+        });
+
         $(document).ready(function(){
             $('.membres-carousel').slick({
                 dots: false,

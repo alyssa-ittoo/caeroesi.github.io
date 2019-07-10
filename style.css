@@ -97,10 +97,13 @@
 ****** Menu *****/
 
 .navbar{
-    margin-top: 23px;
     position: fixed;
     z-index: 10;
     width: 100%;
+}
+
+.navbar.fixed{
+    background-color: rgba(239, 166, 45, .8);
 }
 
 .navbar ul li a{
