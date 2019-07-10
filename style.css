@@ -419,6 +419,13 @@
 #presse .presse{
     height: 257px;
     width: auto;
+    overflow: hidden;
+    padding: 0 5px;
+}
+.presse img{
+    height: auto;
+    min-height: 100%;
+    width: 100%;
 }
 
 footer{
@@ -498,6 +505,11 @@ footer{
 
 .modal-header{
     border: 0;
+}
+
+#imagemodal img{
+    width: 100%;
+    height: auto
 }
 
 @media (max-width: 768px){

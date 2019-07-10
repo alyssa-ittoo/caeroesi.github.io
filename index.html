@@ -302,6 +302,19 @@
                         <div class="presse">
                             <img src="presse/union_nimes.jpg" alt="coupure de presse union nimes" class="imageresource"/>
                         </div>
+
+                        <div class="presse">
+                            <img src="presse/hdv2-1024x683.png" alt="coupure de presse union nimes" class="imageresource"/>
+                        </div>
+
+
+                        <div class="presse">
+                            <img src="presse/union_launois.jpg" alt="coupure de presse union nimes" class="imageresource"/>
+                        </div>
+
+                        <div class="presse">
+                            <img src="presse/union_montcornet1.jpg" alt="coupure de presse union nimes" class="imageresource"/>
+                        </div>
                     </div>
                     <div class="carousel-arrow presse-next slick-next"></div>
                 </div>
@@ -550,8 +563,9 @@
               });
 
             $(".presse").on("click", function() {
-            $('#imagepreview').attr('src', $('.imageresource').attr('src'));
-            $('#imagemodal').modal('show');
+                $('#imagepreview').attr('src', '');
+                $('#imagepreview').attr('src', $(this).find('.imageresource').attr('src'));
+                $('#imagemodal').modal('show');
             });
         });
 
