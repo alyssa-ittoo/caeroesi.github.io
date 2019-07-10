@@ -1,0 +1,591 @@
+/***** 
+****** Général *****/
+
+@media (min-width: 1300px){
+    .container{
+        max-width: 1200px;
+    }
+}
+
+.text-white{ color: #fff; }
+.title{
+    font-family: 'Ostrich Black', sans-serif;
+    text-transform: uppercase;
+    font-size: 5rem;
+    color: #efa62d;
+}
+
+.title-wrapper{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    margin-top: -68px;
+    z-index: 2;
+}
+
+.btn-submit{
+    background-color: #efa62d;
+    color: #fff;
+    width: 92%;
+    max-width: 432px;
+    text-align: center;
+    border-radius: 0;
+    font-family: 'Roboto Light', sans-serif;
+    font-size: 1.1rem;
+}
+
+.btn-outline-white{
+    background-color: transparent;
+    border: 3px solid #fff;
+    color: #fff;
+    border-radius: 17px;
+    width: 100%;
+    height: 69px;
+    font-size: 1.7rem;
+    font-family: 'Roboto Thin', sans-serif;
+    text-align: left;
+    padding-left: 21px;
+}
+
+.btn-outline-white:focus,
+.btn-outline-white:active{
+    outline: 0 !important;
+    box-shadow: none;
+}
+
+.on-mobile{
+    display: none;
+}
+
+/***** Carousel *****/
+.carousel-arrow{
+    width: 43px;
+    height: 170px;
+    cursor: pointer;
+    border: 0;
+    position: absolute;
+    top: 50%;
+    margin-top: -85px;
+    border-style: solid;
+    background-size: contain;
+}
+
+.carousel-arrow.prev,
+.carousel-arrow.agenda-prev,
+.carousel-arrow.presse-prev{
+    left: 10px;
+}
+
+.carousel-arrow.next,
+.carousel-arrow.agenda-next,
+.carousel-arrow.presse-next{
+    right: 10px;
+}
+
+.carousel-arrow.prev{ background: url(images/prev.svg) no-repeat; }
+.carousel-arrow.next{ background: url(images/next.svg) no-repeat; }
+
+.carousel-arrow.agenda-prev{ background: url(images/prev-darker.svg) no-repeat; }
+.carousel-arrow.agenda-next{ background: url(images/next-darker.svg) no-repeat; }
+
+.carousel-arrow.presse-prev{ background: url(images/prev-white.svg) no-repeat; }
+.carousel-arrow.presse-next{ background: url(images/next-white.svg) no-repeat; }
+
+/***** End Carousel *****/
+
+/***** 
+****** Menu *****/
+
+.navbar{
+    margin-top: 23px;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+}
+
+.navbar ul li a{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.navbar ul li a:hover,
+.navbar-collapse li a:active,
+.navbar-collapse li a:focus{
+    color: #fff;
+    text-decoration: underline;
+}
+
+.navbar-toggler .navbar-toggler-icon{
+    background: url(images/menu-mobile.png) no-repeat;
+    background-size: contain;
+}
+
+/***** 
+****** Section présentation *****/
+
+.presentation{
+    position: relative;
+    z-index: 1;
+    height: 1400px;
+    width: 100%;
+
+    background: url(images/presentation.jpg) no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 872px, 50% 100%, 0 872px);
+    background-attachment: fixed;
+}
+
+.presentation .overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    background: url(images/presentation-logo.svg) no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-position: center;
+}
+
+.presentation .presentation-content{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    margin-top: -200px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Roboto Medium', sans-serif;
+    font-size: 1.3rem;
+    line-height: 1.875rem;
+}
+
+.presentation-signature{
+    width: 35%;
+    height: auto;
+    margin: auto;
+    margin-top: 125px;
+}
+
+/***** 
+****** Section projet *****/
+
+.projet{
+    position: relative;
+    padding-top: 600px;
+    top: -600px;
+    margin-bottom: -600px;
+
+    background: url(images/chateau.jpg) no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-attachment: fixed;
+}
+
+.projet .casque{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 1010px;
+    top: 0;
+    margin-top: 30%;
+    right: 0;
+    /* margin-right: 2%; */
+    background: url(images/casque.png) no-repeat;
+    background-size: contain;
+}
+
+.projet-content{
+    margin-top: 245px;
+    padding: 120px 0;
+    background-color: rgba(239, 166, 45, .8);
+    clip-path: polygon(50% 14%, 57% 0%, 100% 0%, 100% 100%, 0 100%, 0 0%, 43% 0%);
+}
+
+.bloc-content{
+    font-family: 'Roboto Thin Italic', sans-serif;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.projet .title-wrapper{
+    margin-top: 177px;
+}
+
+.projet .bloc-content{
+    font-size: 1.1rem;
+}
+
+/* .projet .casque{
+    position: absolute;
+    width: 500px;
+    height: 300px;
+
+    background: url(images/casque.png) no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+} */
+
+/***** 
+****** Section membres *****/
+
+#membres{
+    position: relative;
+}
+
+.membres-carousel{
+    padding: 100px 0;
+}
+/***** 
+****** Section artisanat *****/
+
+#artisanat{
+    position: relative;
+    z-index: 2;
+}
+
+#artisanat .polygon{
+    background-color: #efa62d;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 490px, 50% 100%, 0 490px);
+    height: 990px;
+}
+
+#artisanat .bloc-content{
+    padding-top: 97px;
+    font-size: 1.1rem;
+}
+
+/***** 
+****** Section agenda *****/
+
+.agenda{
+    position: relative;
+    z-index: 1;
+    padding-top: 600px;
+    top: -600px;
+    margin-bottom: -600px;
+
+    background: url(images/agenda.jpg) no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-attachment: fixed;
+}
+
+.agenda .title-wrapper{
+    margin-top: 177px;
+}
+
+.agenda .projet-content{
+    background-color: #efa62d;
+    padding-bottom: 273px;
+}
+
+.agenda .projet-content .container{
+    position: relative;
+}
+
+.carousel-arrow.agenda-prev{ left: -45px; }
+.carousel-arrow.agenda-next{ right: -45px; }
+
+.agenda .date-lieu{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.agenda .date{
+    font-family: 'Roboto Thin', sans-serif;
+    font-size: 2.8rem;
+}
+
+.agenda .lieu{
+    font-family: 'Roboto Black Italic', sans-serif;
+    font-size: 2rem;
+    margin-left: 28px;
+}
+
+.agenda .description{
+    font-family: 'Roboto Thin', sans-serif;
+    font-size: 1.1rem;
+}
+
+.agenda:after{
+    content: "";
+    position: absolute;
+    bottom: -227px;
+    left: 0;
+    width: 100%;
+    height: 228px;
+    background-color: #efa62d;
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+}
+
+.agenda .btn-blog{
+    position: absolute;
+    bottom: -150px;
+    left: 50%;
+    margin-left: -130.5px;
+    z-index: 1;
+}
+
+.agenda .btn-blog .btn-blog-circle{
+    width: 261px;
+    height: 261px;
+    cursor: pointer;
+}
+
+.agenda .btn-blog a:hover{
+    text-decoration: none;
+}
+
+#join-us{
+    position: relative;
+    padding-top: 277px;
+    padding-bottom: 800px;
+    background: url(images/join-us.jpg) no-repeat;
+    background-size: cover;
+}
+
+#join-us .join-us-wrapper{
+    text-align: center;
+}
+
+#join-us .join-us-title{
+    font-family: 'Tahu', sans-serif;
+    font-size: 4rem;
+    margin-bottom: 35px;
+}
+
+#join-us .join-us-description{
+    font-family: 'Roboto Thin Italic', sans-serif;
+    font-size: 1.25rem;
+    padding: 0 150px;
+}
+
+#join-us .join-us-description strong{
+    font-family: 'Roboto Bold Italic', sans-serif;
+}
+
+.img-wrapper{
+    position: relative;
+    height: 760px;
+}
+
+.polygon-top{
+    background-color: #efa62d;
+    height: 980px;
+    width: 100%;
+    clip-path: polygon(50% 0%, 100% 58%, 100% 100%, 0 100%, 0% 58%);
+    position: absolute;
+    top: -900px;
+    left: 0;
+    z-index: 0;
+}
+
+.img-background{
+    background: url(images/footer.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    height: 1800px;
+    z-index: 2;
+    width: 100%;
+    top: -1000px;
+}
+
+#presse{
+    position: relative;
+    z-index: 2;
+    background-color: rgba(239, 166, 45, .8);
+    top: -200px;
+    margin-bottom: -200px;
+}
+
+#presse .presse-content{
+    margin-top: 245px;
+    padding: 120px 0;
+}
+
+#presse .presse{
+    height: 257px;
+    width: auto;
+}
+
+footer{
+    padding-top: 105px;
+    position: relative;
+    z-index: 2;
+}
+
+.formulaire{
+    cursor: pointer;
+}
+
+.formulaire p{
+    margin-bottom: 0;
+    margin-top: 5px;
+    color: #fff;
+    font-size: 1.1rem;
+    font-family: 'Roboto Thin', sans-serif;
+}
+
+.social-media ul{
+    padding-left: 0;
+    list-style-type: none;
+    display: flex;
+}
+
+.social-media ul li{
+    margin-right: 53px;
+    height: 41px;
+    width: auto;
+}
+
+.footer-bottom{
+    position: relative;
+    z-index: 2;
+    background-color: #efa62d;
+    color: #fff;
+    height: 60px;
+    font-family: 'Ubuntu Light', sans-serif;
+}
+
+.footer-bottom .container,
+.footer-bottom .container > div{
+    height: 100%;
+}
+
+.footer-bottom:before{
+    content: "";
+    position: absolute;
+    width: 93px;
+    height: 79px;
+    background: url(images/logo-caeroesi.png) no-repeat;
+    background-size: cover;
+    left: 10%;
+    top: -76px;
+}
+
+.footer-bottom p{
+    margin-bottom: 0;
+    font-size: 1.1rem;
+}
+
+/***** 
+****** Modal Formulaire *****/
+
+.modal-form .modal-dialog{
+    max-width: 80%;
+}
+
+.modal-form .form-control{
+    border-radius: 0;
+    background-color: #fff;
+    margin-bottom: 10px;
+    font-family: 'Roboto Light', sans-serif;
+    font-size: 1.1rem;
+}
+
+.modal-header{
+    border: 0;
+}
+
+@media (max-width: 768px){
+    .on-mobile{ display: block !important; }
+    .navbar-collapse{
+        background-color: #efa62d;
+        width: 100%;
+    }
+    .navbar-collapse .close{
+        text-align: right;
+        padding-top: 30px;
+        padding-right: 30px;
+    }
+    .navbar-collapse .close img{
+        width: 24px;
+        height: 24px;
+    }
+    .navbar-collapse > ul{
+        padding: 47px 30px;
+    }    
+    .navbar-collapse li a{
+        padding: 0;
+    }
+
+    .navbar-collapse .social-media{
+        background-color: #fff;
+        padding: 15px 30px;
+    }
+
+    .navbar-collapse .social-media ul{
+        margin-bottom: 0;
+    }
+
+    .navbar-collapse .social-media ul li{
+        margin-right: 25px;
+        height: auto;
+    }
+
+    .navbar-collapse .social-media li img{
+        height: 25px;
+        width: auto;
+    }
+
+    .presentation{
+        height: auto;
+        min-height: 1100px;
+        clip-path: none;
+    }
+
+    .presentation .presentation-content{
+        font-size: 16px;
+    }
+
+    .presentation-signature{
+        margin-top: 50px;
+    }
+
+    .projet .casque{
+        display: none;
+    }
+
+    #artisanat .polygon,
+    .projet-content,
+    .polygon-top{
+        clip-path: none;
+    }
+
+    #artisanat .polygon{
+        height: auto;
+    }
+
+    #artisanat .bloc-content{
+        padding: 50px 0;
+    }
+
+    .agenda-carousel{
+        width: 75%;
+        margin: auto;
+    }
+
+    .carousel-arrow.agenda-prev{ left: 0; }
+    .carousel-arrow.agenda-next{ right: 0; }
+
+    #join-us .join-us-description{
+        padding: 0;
+    }
+
+    .footer-bottom p{
+        font-size: 13px;
+    }
+}

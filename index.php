@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Accueil</title>
+
+    <link rel="stylesheet" type="text/css" href="fonts/font.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/slick.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-mobile" aria-controls="navbar-mobile" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbar-mobile">
+                <div class="on-mobile close"><a href="#" data-toggle="collapse" data-target="#navbar-mobile" aria-controls="navbar-mobile" aria-expanded="false" aria-label="Toggle navigation"><img src="images/close.png" alt="fermer le menu"></a></div>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#presentation">Présentation<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projet">Projet</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#membres">Membres</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#artisanat">Artisanat</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#agenda">Agenda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#presse">Presse</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#btn-blog">Le blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <div class="social-media on-mobile">
+                    <ul>
+                        <li>
+                            <a href="#"><img src="images/reseaux-soc/facebook-orange.png" alt="Facebook de Caeroesi"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/reseaux-soc/instagram-orange.png" alt="Instagram de Caeroesi"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/reseaux-soc/pinterest-orange.png" alt="Pinterest de Caeroesi"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <section class="presentation">
+        <div class="overlay"></div>
+
+            <div class="presentation-content" id="presentation">
+                <div class="container">
+                    <p>« Fondeur de profession mais surtout passionné d’Histoire et d’archéologie, j’ai fondé l’association Caeroesi en janvier 2011. Le but : réunir d’autres passionnés et partager nos recherches et découvertes au plus grand nombre. Je me suis intéressé en premier lieu à l’Histoire de ma commune avant d’élargir mes recherches à la protohistoire, discipline consacrée aux peuples n’utilisant pas l’écriture. Ces civilisations n’en étaient pourtant pas moins riches et c’est ce que je veux démontrer au travers de cette association, avec l’aide des autres membres. Si nous participons déjà à de nombreux événements – historiques ou non, nous avons pour projet d’intervenir dans des écoles ou des centres aérés, afin de diffuser nos recherches encore plus largement. Nous espérons également développer davantage de relations avec les autres troupes françaises et/ou européennes, afin d’échanger et partager nos connaissances. »</p>
+
+                    <div class="presentation-signature">
+                        <img src="images/signature-pascal-lagrange-blanc.png" alt="Signature de Pascal Lagrange" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        
+    </section>
+
+    <section class="projet">
+        <div class="title-wrapper" id="projet">
+            <div class="container">
+                <h2 class="title">Projet</h2>
+            </div>
+        </div>
+            
+        <div class="casque"></div>
+
+        <div class="bloc-content projet-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <p>Depuis 2011, notre troupe a pour but de faire revivre un groupe social celte du IIIème siècle avant notre ère : les Caeroesi. Le nom à connotation pacifique de cet ancien peuple – signifiant « les bergers », nous a tout de suite plu. Historiquement, ils occupaient un petit territoire se situant au Nord-Est de l’Ardenne belge actuelle. Voisins des Condruses, des Pemanes et des Seignes – eux-mêmes entourés par les Éburons au Nord-Ouest, et les Trevires au Sud-Est, les Caeroesi côtoyaient également les Pleumoxii,</p>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <p>à l’Ouest de l’actuel territoire de l’Ardenne française, le long de la rive gauche de la Meuse, et les Remes, alors installés du Nord-Ouest au Sud du département. Afin d’être plus en accord avec la localisation actuelle de notre association, il aurait été logique de choisir les Pleumoxii. Toutefois, nous assumons pleinement le choix de faire revivre un petit peuple méconnu, coincé entre de grands voisins célèbres !</p>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <p>Éthique du groupe et forme juridique :
+                        <br>Ce groupe n’est lié à la propagande d’aucune idéologie panceltique intolérante et fanatique. Nous serons ouverts à toutes et tous, et curieux de toutes les découvertes. La forme juridique de ce groupe est une association loi 1901. Déclaration à la préfecture des Ardennes n° : W081001973.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="membres">
+        <div class="title-wrapper">
+            <div class="container">
+                <h2 class="title text-white">Membres</h2>
+            </div>
+        </div>
+
+        <div class="container carousel-container">
+            <div class="carousel-arrow prev slick-prev"></div>
+            <div class="membres-carousel">
+                <div class="membres"><img src="images/membres/alauda.png" class="img-fluid" alt="Photo de Alauda"></div>
+                <div class="membres"><img src="images/membres/alaunos.png" class="img-fluid" alt="Photo de alaunos"></div>
+                <div class="membres"><img src="images/membres/amamela.png" class="img-fluid" alt="Photo de amamela"></div>
+                <div class="membres"><img src="images/membres/artos.png" class="img-fluid" alt="Photo de artos"></div>
+                <div class="membres"><img src="images/membres/bagonouiios.png" class="img-fluid" alt="Photo de bagonouiios"></div>
+                <div class="membres"><img src="images/membres/cularomaros.png" class="img-fluid" alt="Photo de cularomaros"></div>
+                <div class="membres"><img src="images/membres/deuromaros.png" class="img-fluid" alt="Photo de deuromaros"></div>
+                <div class="membres"><img src="images/membres/louernos.png" class="img-fluid" alt="Photo de louernos"></div>
+                <div class="membres"><img src="images/membres/uidugnata.png" class="img-fluid" alt="Photo de uidugnata"></div>
+            </div>
+            <div class="carousel-arrow next slick-next"></div>
+
+        </div>
+    </section>
+
+    <section id="artisanat">
+        <div class="title-wrapper">
+            <div class="container">
+                <h2 class="title">Artisanat</h2>
+            </div>
+        </div>
+
+        <div class="polygon">
+            <div class="bloc-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                            <p>Au fil des ans, notre troupe de reconstitution protohistorique tend à se perfectionner, afin de mettre en scène le plus fidèlement possible la vie quotidienne de ces « bergers » d’un autre temps. Nous avons ainsi développé divers artisanats comme le tissage, la métallurgie et la poterie, tout en nous penchant sur des questions telles que l’habitat, la nourriture, l’agriculture ou l’habillement. S’ajoutent à cela des expérimentations concernant la structure religieuse, ainsi que la structure défensive et guerrière. Menées en collaboration avec des archéologues et historiens locaux, toutes nos recherches se</p>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <p>basent bien évidemment sur des données historiques. S’affinant avec le temps, elles n’ont qu’un seul but : être diffusées au plus grand nombre ! Vous pouvez ainsi nous croisez lors de manifestations, rencontres et festivals historiques, pendant lesquels nous faisons diverses démonstrations et reconstitutions. N’hésitez pas à nous solliciter si vous êtes organisateur d’événements historiques, ou à nous rejoindre si le projet vous intéresse. Nous sommes toujours à la recherche de nouveaux membres passionnés !
+                                    </p>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <p>Lors des manifestations et festivals historiques auxquels nous participons, nous avons la possibilité d’installer un campement comprenant divers ateliers en lien avec l’artisanat, la structure défensive et guerrière, et la vie quotidienne. Poterie, cuisine, tissage, teinture, fonderie bronze, armement ou encore démonstrations cultuelles peuvent ainsi être présentés. Ces ateliers évoluant d’année en année, n’hésitez pas à nous contacter pour connaître nos disponibilités !</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="agenda">
+        <div class="title-wrapper" id="agenda">
+            <div class="container">
+                <h2 class="title">Agenda</h2>
+            </div>
+        </div>
+        <div class="bloc-content projet-content">
+            <div class="container">
+                <div class="carousel-arrow agenda-prev slick-prev"></div>
+                <div class="agenda-carousel">
+                    <div class="event">
+                        <div class="date-lieu">
+                            <div class="date">
+                                //<span>12/10/2019</span>
+                            </div>
+                            <div class="lieu">
+                                Cormontreuil
+                            </div>
+                        </div>
+
+                        <div class="description">
+                            <p>Ut nec posuere tortor, in pulvinar enim. Curabitur et quam felis. Sed a viverra dolor, vel iaculis libero. Sed ac accumsan    lorem. Morbi nec ante fringilla nunc suscipit efficitur. Etiam efficitur turpis libero, ut vulputate dolor cursus id. Donec sollicitudin gravida mattis. Maecenas</p>
+                        </div>
+                    </div>
+
+                    <div class="event">
+                        <div class="date-lieu">
+                            <div class="date">
+                                //<span>25.10.2019</span>
+                            </div>
+                            <div class="lieu">
+                                Rethel
+                            </div>
+                        </div>
+
+                        <div class="description">
+                            <p>Ut nec posuere tortor, in pulvinar enim. Curabitur et quam felis. Sed a viverra dolor, vel iaculis libero. Sed ac accumsan    lorem. Morbi nec ante fringilla nunc suscipit efficitur. Etiam efficitur turpis libero, ut vulputate dolor cursus id. Donec sollicitudin gravida mattis. Maecenas</p>
+                        </div>
+                    </div>
+
+                    <div class="event">
+                        <div class="date-lieu">
+                            <div class="date">
+                                //<span>25.10.2019</span>
+                            </div>
+                            <div class="lieu">
+                                Soisson
+                            </div>
+                        </div>
+
+                        <div class="description">
+                            <p>Ut nec posuere tortor, in pulvinar enim. Curabitur et quam felis. Sed a viverra dolor, vel iaculis libero. Sed ac accumsan    lorem. Morbi nec ante fringilla nunc suscipit efficitur. Etiam efficitur turpis libero, ut vulputate dolor cursus id. Donec sollicitudin gravida mattis. Maecenas</p>
+                        </div>
+                    </div>
+
+                    <div class="event">
+                        <div class="date-lieu">
+                            <div class="date">
+                                //<span>12/10/2019</span>
+                            </div>
+                            <div class="lieu">
+                                Cormontreuil
+                            </div>
+                        </div>
+
+                        <div class="description">
+                            <p>Ut nec posuere tortor, in pulvinar enim. Curabitur et quam felis. Sed a viverra dolor, vel iaculis libero. Sed ac accumsan    lorem. Morbi nec ante fringilla nunc suscipit efficitur. Etiam efficitur turpis libero, ut vulputate dolor cursus id. Donec sollicitudin gravida mattis. Maecenas</p>
+                        </div>
+                    </div>
+
+                    <div class="event">
+                        <div class="date-lieu">
+                            <div class="date">
+                                //<span>25.10.2019</span>
+                            </div>
+                            <div class="lieu">
+                                Rethel
+                            </div>
+                        </div>
+
+                        <div class="description">
+                            <p>Ut nec posuere tortor, in pulvinar enim. Curabitur et quam felis. Sed a viverra dolor, vel iaculis libero. Sed ac accumsan    lorem. Morbi nec ante fringilla nunc suscipit efficitur. Etiam efficitur turpis libero, ut vulputate dolor cursus id. Donec sollicitudin gravida mattis. Maecenas</p>
+                        </div>
+                    </div>
+
+                    <div class="event">
+                        <div class="date-lieu">
+                            <div class="date">
+                                //<span>25.10.2019</span>
+                            </div>
+                            <div class="lieu">
+                                Rethel
+                            </div>
+                        </div>
+
+                        <div class="description">
+                            <p>Ut nec posuere tortor, in pulvinar enim. Curabitur et quam felis. Sed a viverra dolor, vel iaculis libero. Sed ac accumsan    lorem. Morbi nec ante fringilla nunc suscipit efficitur. Etiam efficitur turpis libero, ut vulputate dolor cursus id. Donec sollicitudin gravida mattis. Maecenas</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="carousel-arrow agenda-next slick-next"></div>
+            </div>
+        </div>
+
+        <div class="btn-blog" id="btn-blog">
+            <a href="#" class="btn-blog-circle">
+                <img src="images/btn-blog.svg" alt="Bouton aller vers le blog">
+            </a>
+        </div>
+    </section>
+
+    <section id="join-us">
+        <div class="join-us-wrapper">
+            <div class="container">
+                <h4 class="join-us-title">Rejoignez-nous</h4>
+                <p class="join-us-description">Vous êtes <strong>passionné(e) d’Histoire ?</strong> Vous aimez tout particulièrement la reconstitution ? Rejoignez-nous ! Nous sommes toujours à la <strong>recherche de nouveaux membres</strong> – hommes, femmes ou enfants, pour faire vivre les artisanats et faire grandir l’association.
+                <br>Que vous ayez un talent particulier pouvant être utile à la troupe – sur le camp ou dans l’ombre (menuisier, musicien, cuisinier, community manager, régisseur…) ou que vous soyez tout simplement curieux/curieuse de découvrir les gestes d’antan, nous vous accueillerons avec plaisir !</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="img-wrapper">
+        <div class="polygon-top"></div>
+
+        <div class="img-background"></div>
+
+        <section id="presse">
+            <div class="title-wrapper">
+                <div class="container">
+                    <h2 class="title">Presse</h2>
+                </div>
+            </div>
+            
+            <div class="presse-content">
+                <div class="container carousel-container">
+                    <div class="carousel-arrow presse-prev slick-prev"></div>
+                    <div class="presse-carousel fade-in-progressively" data-grid-ratio="1">
+                        <div class="presse">
+                            <img src="presse/union_nimes.jpg" alt="coupure de presse union nimes" class="imageresource"/>
+                        </div>
+                    </div>
+                    <div class="carousel-arrow presse-next slick-next"></div>
+                </div>
+            </div>
+        </section>
+
+        <footer id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-5">
+                        <h2 class="title text-white">Contact</h2>
+
+                        <div class="social-media">
+                            <ul>
+                                <li>
+                                    <a href="#"><img src="images/reseaux-soc/facebook.png" alt="Facebook de Caeroesi"></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="images/reseaux-soc/instagram.png" alt="Instagram de Caeroesi"></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="images/reseaux-soc/pinterest.png" alt="Pinterest de Caeroesi"></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="col col-md formulaire">
+                        <div>
+                            <button type="button" class="btn-outline-white" data-toggle="modal" data-target=".modal-form">Entrez votre mail</button>
+                        </div>
+                        <p>Des questions un devis, des news ...</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <p>Copyright 2019 - Caeroesi</p>
+                <p>Design by FRANÇOIS DO - Intégration ALYSSA ITTOO</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Presse preview quand on clique -->
+    <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <img src="" id="imagepreview">
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- Formulaire -->
+    <div class="modal modal-form fade" tabindex="-1" role="dialog" aria-hidden="false">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="false">&times;</span></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="row">
+                                <div class="col">
+                                    <input type="email" class="form-control" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <input type="text" class="form-control" placeholder="Prénom">
+                                </div>
+                                <div class="col">
+                                    <input type="text" class="form-control" placeholder="Nom">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <input type="text" class="form-control" placeholder="Adresse">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <input type="text" class="form-control" placeholder="Adresse 2">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <input type="text" class="form-control" placeholder="Ville">
+                                </div>
+                                <div class="col">
+                                    <input type="text" class="form-control" placeholder="CP">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <input type="text" class="form-control" placeholder="Pays">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <input type="tel" class="form-control" placeholder="Téléphone">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-md">
+                            <div class="row">
+                                <div class="col">
+                                    <textarea class="form-control" id="message" rows="5" placeholder="Votre Message"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-right">
+                        <button type="submit" class="btn btn-submit">Envoyer</button>
+                    </div>
+                </form>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="assets/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/slick.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.membres-carousel').slick({
+                dots: false,
+                arrows: true,
+                infinite: false,
+                speed: 300,
+                slidesToShow: 4,
+                slidesToScroll: 4,
+                rows: 2,
+                prevArrow: '.prev',
+                nextArrow: '.next',
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            rows: 1,
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                    
+                ]
+            });
+
+            $('.agenda-carousel').slick({
+                dots: false,
+                arrows: true,
+                infinite: false,
+                speed: 300,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                rows: 3,
+                prevArrow: '.agenda-prev',
+                nextArrow: '.agenda-next',
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            rows: 2,
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            rows: 1,
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                    
+                ]
+            });
+
+            // Section Presse - carousel + modal pour la preview d'image
+            $('.presse-carousel').slick({
+                dots: false,
+                arrows: true,
+                speed: 300,
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                prevArrow: '.presse-prev',
+                nextArrow: '.presse-next',
+                responsive: [
+                  {
+                    breakpoint: 1024,
+                    settings: {
+                      slidesToShow: 3,
+                      slidesToScroll: 3,
+                    }
+                  },
+                  {
+                    breakpoint: 600,
+                    settings: {
+                      slidesToShow: 2,
+                      slidesToScroll: 2
+                    }
+                  },
+                  {
+                    breakpoint: 480,
+                    settings: {
+                      slidesToShow: 1,
+                      slidesToScroll: 1
+                    }
+                  }
+                ]
+              });
+
+            $(".presse").on("click", function() {
+            $('#imagepreview').attr('src', $('.imageresource').attr('src'));
+            $('#imagemodal').modal('show');
+            });
+        });
+
+        $("a[href*='#']:not([href='#'])").click(function(e) {
+            e.preventDefault();
+            if (
+                location.hostname == this.hostname
+                && this.pathname.replace(/^\//,"") == location.pathname.replace(/^\//,"")
+            ) {
+                var anchor = $(this.hash);
+                anchor = anchor.length ? anchor : $("[name=" + this.hash.slice(1) +"]");
+                if ( anchor.length ) {
+                    $("html, body").animate( { scrollTop: anchor.offset().top - 75 }, 1500);
+                }
+            }
+        });
+    </script>
+
+</body>
+</html>
