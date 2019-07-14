@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Accueil</title>
 
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+
     <link rel="stylesheet" type="text/css" href="fonts/font.css">
 
     <link rel="stylesheet" type="text/css" href="assets/bootstrap.min.css">
@@ -51,13 +53,13 @@
                 <div class="social-media on-mobile">
                     <ul>
                         <li>
-                            <a href="#"><img src="images/reseaux-soc/facebook-orange.png" alt="Facebook de Caeroesi"></a>
+                            <a href="https://www.facebook.com/Caeroesi/" target="_blank"><img src="images/reseaux-soc/facebook-orange.png" alt="Facebook de Caeroesi"></a>
                         </li>
                         <li>
-                            <a href="#"><img src="images/reseaux-soc/instagram-orange.png" alt="Instagram de Caeroesi"></a>
+                            <a href="https://www.instagram.com/caeroesi/" target="_blank"><img src="images/reseaux-soc/instagram-orange.png" alt="Instagram de Caeroesi"></a>
                         </li>
                         <li>
-                            <a href="#"><img src="images/reseaux-soc/pinterest-orange.png" alt="Pinterest de Caeroesi"></a>
+                            <a href="https://twitter.com/caeroesi" target="_blank"><img src="images/reseaux-soc/twitter-orange.png" alt="Twitter de Caeroesi"></a>
                         </li>
                     </ul>
                 </div>
@@ -108,8 +110,8 @@
         </div>
     </section>
 
-    <section id="membres">
-        <div class="title-wrapper">
+    <section class="membres">
+        <div class="title-wrapper" id="membres">
             <div class="container">
                 <h2 class="title text-white">Membres</h2>
             </div>
@@ -133,8 +135,8 @@
         </div>
     </section>
 
-    <section id="artisanat">
-        <div class="title-wrapper">
+    <section class="artisanat">
+        <div class="title-wrapper" id="artisanat">
             <div class="container">
                 <h2 class="title">Artisanat</h2>
             </div>
@@ -267,7 +269,7 @@
         </div>
 
         <div class="btn-blog" id="btn-blog">
-            <a href="#" class="btn-blog-circle">
+            <a href="http://caeroesi.fr/asso/" target="_blank" class="btn-blog-circle">
                 <img src="images/btn-blog.svg" alt="Bouton aller vers le blog">
             </a>
         </div>
@@ -288,8 +290,8 @@
 
         <div class="img-background"></div>
 
-        <section id="presse">
-            <div class="title-wrapper">
+        <section class="presse-container">
+            <div class="title-wrapper" id="presse">
                 <div class="container">
                     <h2 class="title">Presse</h2>
                 </div>
@@ -315,6 +317,12 @@
                         <div class="presse">
                             <img src="presse/union_montcornet1.jpg" alt="coupure de presse union nimes" class="imageresource"/>
                         </div>
+                        <div class="presse">
+                            <img src="presse/capture-video.png" alt="vidéo france 3" class="imageresourceurl" videourl="https://www.youtube.com/embed/1k470PeIXZM"/>
+                        </div>
+                        <div class="presse">
+                            <img src="presse/capture-video2.png" alt="vidéo france 3" class="imageresourceurl" videourl="https://www.youtube.com/embed/F5WWyyYG018"/>
+                        </div>
                     </div>
                     <div class="carousel-arrow presse-next slick-next"></div>
                 </div>
@@ -330,13 +338,13 @@
                         <div class="social-media">
                             <ul>
                                 <li>
-                                    <a href="#"><img src="images/reseaux-soc/facebook.png" alt="Facebook de Caeroesi"></a>
+                                    <a href="https://www.facebook.com/Caeroesi/" target="_blank"><img src="images/reseaux-soc/facebook.png" alt="Facebook de Caeroesi"></a>
                                 </li>
                                 <li>
-                                    <a href="#"><img src="images/reseaux-soc/instagram.png" alt="Instagram de Caeroesi"></a>
+                                    <a href="https://www.instagram.com/caeroesi/" target="_blank"><img src="images/reseaux-soc/instagram.png" alt="Instagram de Caeroesi"></a>
                                 </li>
                                 <li>
-                                    <a href="#"><img src="images/reseaux-soc/pinterest.png" alt="Pinterest de Caeroesi"></a>
+                                    <a href="https://twitter.com/caeroesi" target="_blank"><img src="images/reseaux-soc/twitter.png" alt="Twitter de Caeroesi"></a>
                                 </li>
                             </ul>
                         </div>
@@ -358,8 +366,8 @@
     <div class="footer-bottom">
         <div class="container">
             <div class="d-flex justify-content-between align-items-center">
-                <p>Copyright 2019 - Caeroesi</p>
-                <p>Design by FRANÇOIS DO - Intégration ALYSSA ITTOO</p>
+                <p>Copyright 2019 - Caeroesi - <a href="mentions-legales.pdf" target="_blank">Mentions légales</a></p>
+                <p>Design by <a href="https://www.behance.net/francoisdo" target="_blank">FRANÇOIS DO</a> - Intégration <a href="http://alyssa-ittoo.fr/" target="_blank">ALYSSA ITTOO</a></p>
             </div>
         </div>
     </div>
@@ -373,6 +381,8 @@
             </div>
             <div class="modal-body">
               <img src="" id="imagepreview">
+
+              <iframe id="youtube" width="100" height="315" src=""></iframe>
             </div>
           </div>
         </div>
@@ -571,10 +581,21 @@
                   }
                 ]
               });
-
+            
+            $("#youtube").hide();
             $(".presse").on("click", function() {
                 $('#imagepreview').attr('src', '');
-                $('#imagepreview').attr('src', $(this).find('.imageresource').attr('src'));
+                
+                if($(this).find('.imageresourceurl').length){
+                    $('#youtube').attr('src', $(this).find('.imageresourceurl').attr('videourl'));
+                    console.log($(this).find('.imageresourceurl').attr('videourl'));
+                    $("#youtube").show();
+                    $("#imagepreview").hide();
+                }else{
+                    $('#imagepreview').attr('src', $(this).find('.imageresource').attr('src'));
+                    $("#imagepreview").show();
+                    $("#youtube").hide();
+                }
                 $('#imagemodal').modal('show');
             });
         });

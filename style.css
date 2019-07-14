@@ -45,6 +45,7 @@
     font-family: 'Roboto Thin', sans-serif;
     text-align: left;
     padding-left: 21px;
+    cursor: pointer;
 }
 
 .btn-outline-white:focus,
@@ -123,6 +124,12 @@
 .navbar-toggler .navbar-toggler-icon{
     background: url(images/menu-mobile.png) no-repeat;
     background-size: contain;
+    height: 23px;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active{
+    outline: 0;
 }
 
 /***** 
@@ -138,6 +145,7 @@
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 872px, 50% 100%, 0 872px);
     clip-path: polygon(0 0, 100% 0, 100% 872px, 50% 100%, 0 872px);
     background-attachment: fixed;
 }
@@ -189,25 +197,30 @@
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-attachment: fixed;
+    overflow: hidden;
 }
 
 .projet .casque{
     position: absolute;
     z-index: 1;
     width: 100%;
-    height: 1010px;
-    top: 0;
+    height: 100%;
+    bottom: 0;
     margin-top: 30%;
     right: 0;
-    /* margin-right: 2%; */
     background: url(images/casque.png) no-repeat;
-    background-size: contain;
+    background-size: 900px;
+    -webkit-background-size: 900px;
+    -moz-background-size: 900px;
+    background-position: bottom;
+    margin-right: -200px;
 }
 
 .projet-content{
     margin-top: 245px;
     padding: 120px 0;
     background-color: rgba(239, 166, 45, .8);
+    -webkit-clip-path: polygon(50% 14%, 57% 0%, 100% 0%, 100% 100%, 0 100%, 0 0%, 43% 0%);
     clip-path: polygon(50% 14%, 57% 0%, 100% 0%, 100% 100%, 0 100%, 0 0%, 43% 0%);
 }
 
@@ -224,23 +237,13 @@
 
 .projet .bloc-content{
     font-size: 1.1rem;
+    text-align: justify;
 }
-
-/* .projet .casque{
-    position: absolute;
-    width: 500px;
-    height: 300px;
-
-    background: url(images/casque.png) no-repeat;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-} */
 
 /***** 
 ****** Section membres *****/
 
-#membres{
+.membres{
     position: relative;
 }
 
@@ -250,21 +253,23 @@
 /***** 
 ****** Section artisanat *****/
 
-#artisanat{
+.artisanat{
     position: relative;
     z-index: 2;
 }
 
-#artisanat .polygon{
+.artisanat .polygon{
     background-color: #efa62d;
     position: relative;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 490px, 50% 100%, 0 490px);
     clip-path: polygon(0 0, 100% 0, 100% 490px, 50% 100%, 0 490px);
     height: 990px;
 }
 
-#artisanat .bloc-content{
+.artisanat .bloc-content{
     padding-top: 97px;
     font-size: 1.1rem;
+    text-align: justify;
 }
 
 /***** 
@@ -301,8 +306,15 @@
 .carousel-arrow.agenda-next{ right: -45px; }
 
 .agenda .date-lieu{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-flex-wrap: wrap !important;
+    -ms-flex-wrap: wrap !important;
     flex-wrap: wrap;
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
     align-items: center;
 }
 
@@ -330,6 +342,7 @@
     width: 100%;
     height: 228px;
     background-color: #efa62d;
+    -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
     clip-path: polygon(50% 100%, 0 0, 100% 0);
 }
 
@@ -339,11 +352,11 @@
     left: 50%;
     margin-left: -130.5px;
     z-index: 1;
+    width: 261px;
+    height: 261px;
 }
 
 .agenda .btn-blog .btn-blog-circle{
-    width: 261px;
-    height: 261px;
     cursor: pointer;
 }
 
@@ -357,6 +370,7 @@
     padding-bottom: 800px;
     background: url(images/join-us.jpg) no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 #join-us .join-us-wrapper{
@@ -388,6 +402,7 @@
     background-color: #efa62d;
     height: 980px;
     width: 100%;
+    -webkit-clip-path: polygon(50% 0%, 100% 58%, 100% 100%, 0 100%, 0% 58%);
     clip-path: polygon(50% 0%, 100% 58%, 100% 100%, 0 100%, 0% 58%);
     position: absolute;
     top: -900px;
@@ -406,7 +421,7 @@
     top: -1000px;
 }
 
-#presse{
+.presse-container{
     position: relative;
     z-index: 2;
     background-color: rgba(239, 166, 45, .8);
@@ -414,21 +429,23 @@
     margin-bottom: -200px;
 }
 
-#presse .presse-content{
+.presse-container .presse-content{
     margin-top: 245px;
     padding: 120px 0;
 }
 
-#presse .presse{
+.presse-container .presse{
     height: 257px;
     width: auto;
     overflow: hidden;
     padding: 0 5px;
+    cursor: pointer;
 }
 .presse img{
     height: auto;
     min-height: 100%;
     width: 100%;
+    object-fit:scale-down;
 }
 
 footer{
@@ -452,6 +469,9 @@ footer{
 .social-media ul{
     padding-left: 0;
     list-style-type: none;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -486,6 +506,10 @@ footer{
     top: -76px;
 }
 
+.footer-bottom a{
+    color: #fff;
+}
+
 .footer-bottom p{
     margin-bottom: 0;
     font-size: 1.1rem;
@@ -501,13 +525,21 @@ footer{
 .modal-form .form-control{
     border-radius: 0;
     background-color: #fff;
-    margin-bottom: 10px;
     font-family: 'Roboto Light', sans-serif;
     font-size: 1.1rem;
 }
 
+.modal-form .col{
+    margin-bottom: 10px;
+}
+
 .modal-header{
     border: 0;
+    clear: both;
+}
+
+#imagemodal .modal-dialog{
+    max-width: 50%;
 }
 
 #imagemodal img{
@@ -515,8 +547,55 @@ footer{
     height: auto
 }
 
+#imagemodal #youtube{
+    width: 100%;
+}
+
+/***** 
+****** Page erreur 404 *****/
+.error{
+    min-height: 1500px;
+    height: 100vh;
+    width: 100%;
+    background: url(images/page-404/fond-error.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 172px;
+}
+
+.error-content{
+    text-transform: uppercase;
+    color: #f4b253;
+    font-family: 'Proxima nova Thin', sans-serif;
+    font-size: 1.8rem;
+}
+
+.error-content .oups{
+    font-size: 4.1rem;
+    display: block;
+}
+
+.error-btn{
+    margin-left: -30px;
+}
+/***** 
+****** Mobile et tablette *****/
+
 @media (max-width: 768px){
     .on-mobile{ display: block !important; }
+    .row {
+        -webkit-flex-wrap: wrap;
+        display: block;
+    }
+    .navbar.fixed{
+        background-color: transparent !important;
+    }
+    .navbar > .container{
+        -webkit-box-align: start;
+    }
+    .navbar-toggler{
+        background-color: rgba(239, 166, 45, .8);
+    }
     .navbar-collapse{
         background-color: #efa62d;
         width: 100%;
@@ -560,6 +639,7 @@ footer{
         height: auto;
         min-height: 1100px;
         clip-path: none;
+        -webkit-clip-path: none;
     }
 
     .presentation .presentation-content{
@@ -574,21 +654,22 @@ footer{
         display: none;
     }
 
-    #artisanat .polygon,
+    .artisanat .polygon,
     .projet-content,
     .polygon-top{
         clip-path: none;
+        -webkit-clip-path: none;
     }
 
-    #artisanat .polygon{
+    .artisanat .polygon{
         height: auto;
     }
 
-    #artisanat .bloc-content{
+    .artisanat .bloc-content{
         padding: 50px 0;
     }
 
-    .agenda-carousel{
+    .agenda-carousel, .presse-carousel, .members-carousel{
         width: 75%;
         margin: auto;
     }
@@ -600,7 +681,17 @@ footer{
         padding: 0;
     }
 
+    #imagemodal .modal-dialog,
+    .modal-form .modal-dialog{
+        max-width: 90%;
+        margin: auto;
+    }
+
     .footer-bottom p{
         font-size: 13px;
+    }
+
+    .footer-bottom .d-flex{
+        display: block !important;
     }
 }
