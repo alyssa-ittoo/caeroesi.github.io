@@ -583,10 +583,6 @@ footer{
 
 @media (max-width: 768px){
     .on-mobile{ display: block !important; }
-    .row {
-        -webkit-flex-wrap: wrap;
-        display: block;
-    }
     .navbar.fixed{
         background-color: transparent !important;
     }
@@ -638,8 +634,8 @@ footer{
     .presentation{
         height: auto;
         min-height: 1100px;
-        clip-path: none;
-        -webkit-clip-path: none;
+        clip-path: polygon(0 0, 100% 0, 100% 885px, 50% 100%, 0 885px);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 885px, 50% 100%, 0 885px);
     }
 
     .presentation .presentation-content{
@@ -669,6 +665,16 @@ footer{
         padding: 50px 0;
     }
 
+    .agenda .projet-content{
+        padding-bottom: 0;
+    }
+
+    .agenda .btn-blog{
+        width: 150px;
+        height: 150px;
+        margin-left: -75px;
+    }
+
     .agenda-carousel, .presse-carousel, .members-carousel{
         width: 75%;
         margin: auto;
@@ -676,6 +682,10 @@ footer{
 
     .carousel-arrow.agenda-prev{ left: 0; }
     .carousel-arrow.agenda-next{ right: 0; }
+
+    .slick-slide img{
+        margin: auto;
+    }
 
     #join-us .join-us-description{
         padding: 0;
@@ -693,5 +703,13 @@ footer{
 
     .footer-bottom .d-flex{
         display: block !important;
+    }
+}
+
+@media (max-width: 767.98px){
+    .row {
+        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        display: block;
     }
 }
