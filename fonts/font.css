@@ -4,23 +4,8 @@
 }
 
 @font-face {
-  font-family: 'Ostrich';
-  src: url('ostrich-regular.ttf') format('truetype'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-@font-face {
     font-family: 'Ostrich Black';
     src: url('ostrich-black.ttf') format('truetype'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-@font-face {
-    font-family: 'Ostrich Bold';
-    src: url('ostrich-bold.ttf') format('truetype'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-@font-face {
-    font-family: 'Ostrich Light';
-    src: url('ostrich-light.ttf') format('truetype'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 @font-face {
@@ -31,11 +16,6 @@
 @font-face {
     font-family: 'Roboto Black';
     src: url('Roboto-Black.ttf') format('truetype'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-@font-face {
-    font-family: 'Roboto Bold';
-    src: url('Roboto-Bold.ttf') format('truetype'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 @font-face {
@@ -56,12 +36,6 @@
 @font-face {
     font-family: 'Roboto Black Italic';
     src: url('Roboto-BlackItalic.ttf') format('truetype'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-
-@font-face {
-    font-family: 'Roboto Light Italic';
-    src: url('Roboto-LightItalic.ttf') format('truetype'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 @font-face {
