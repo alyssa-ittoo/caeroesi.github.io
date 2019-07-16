@@ -69,6 +69,7 @@
     margin-top: -85px;
     border-style: solid;
     background-size: contain;
+    z-index: 10;
 }
 
 .carousel-arrow.prev,
@@ -174,6 +175,10 @@
     font-family: 'Roboto Medium', sans-serif;
     font-size: 1.3rem;
     line-height: 1.875rem;
+}
+
+.presentation-content .presentation-content-president{
+    font-family: 'Roboto', sans-serif;
 }
 
 .presentation-signature{
@@ -533,6 +538,13 @@ footer{
     margin-bottom: 10px;
 }
 
+.modal-form .modal-body p{
+    text-align: center;
+    color: #efa62d;
+    font-family: 'Roboto Thin', sans-serif;
+    font-size: 1.1rem;
+}
+
 .modal-header{
     border: 0;
     clear: both;
@@ -711,5 +723,13 @@ footer{
         flex-wrap: wrap;
         -webkit-flex-wrap: wrap;
         display: block;
+    }
+}
+
+@media (max-width: 425px){
+    .presentation{
+        min-height: 1200px;
+        clip-path: polygon(0 0, 100% 0, 100% 1080px, 50% 100%, 0 1080px);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 1080px, 50% 100%, 0 1080px);
     }
 }
